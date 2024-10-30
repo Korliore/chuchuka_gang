@@ -76,7 +76,7 @@ install() {
     uci set ruantiblock.config.t_proxy_port_tcp="1100"
     uci set ruantiblock.config.t_proxy_allow_udp="1"
     uci set ruantiblock.config.add_user_entries="1"
-    # uci set ruantiblock.config.user_entries_remote="https://raw.githubusercontent.com/gSpotx2f/ruantiblock_blacklist/refs/heads/master/blacklist/fqdn/update_status"
+    uci set ruantiblock.config.user_entries_remote="https://raw.githubusercontent.com/Korliore/chuchuka_gang/refs/heads/main/custom_list"
     uci commit ruantiblock
     /usr/bin/ruantiblock update
     /etc/init.d/ruantiblock enable
