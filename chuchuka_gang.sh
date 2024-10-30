@@ -40,7 +40,7 @@ remove_packages() {
     opkg --force-removal-of-dependent-packages remove shadowsocks-libev-ss-local shadowsocks-libev-ss-redir shadowsocks-libev-ss-rules shadowsocks-libev-ss-tunnel shadowsocks-libev-config luci-app-shadowsocks-libev
     opkg --force-removal-of-dependent-packages remove ss_checker
     opkg --force-removal-of-dependent-packages remove ruantiblock
-    rm -rf /etc/config/shadowsocks-libev /etc/config/shadowsocks-libev-opkg
+    rm -rf /etc/config/shadowsocks-libev /etc/config/shadowsocks-libev-opkg /etc/config/ruantiblock /etc/config/ruantiblock-opkg
     echo -e "${RED}Роутер будет перезагружен. Пожалуйста, подождите.${NC}"
     sleep 2
     reboot
@@ -115,8 +115,3 @@ if [[ "$choice" == "y" ]]; then
 else
     echo "Установка отменена."
 fi
-
-
-
-
-
